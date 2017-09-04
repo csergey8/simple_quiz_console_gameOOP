@@ -27,3 +27,6 @@ var questions = [q1, q2, q3];
 var n = Math.floor((Math.random() * questions.length));
 
 questions[n].displayQuestion();
+
+// Add promt
+var answer = parseInt(prompt('Please select the correct answer.'));
