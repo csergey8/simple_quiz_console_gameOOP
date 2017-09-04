@@ -1,3 +1,7 @@
+//using of IFFY for private
+
+(function(){
+
 //Build function contructor
 
 function Question(question, answers, correct) {
@@ -42,3 +46,6 @@ questions[n].displayQuestion();
 var answer = parseInt(prompt('Please select the correct answer.'));
 
 questions[n].checkAnswer(answer);
+
+})();
+
