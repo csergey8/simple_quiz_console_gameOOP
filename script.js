@@ -25,3 +25,5 @@ var q3 = new Question('What does best decribe coding?', ['Boring', 'Hard', 'Fun'
 var questions = [q1, q2, q3];
 
 var n = Math.floor((Math.random() * questions.length));
+
+questions[n].displayQuestion();
