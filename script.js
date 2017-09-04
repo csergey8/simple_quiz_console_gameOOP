@@ -16,6 +16,16 @@ Question.prototype.displayQuestion = function () {
   }
 };
 
+//Add another prorotype method
+
+Question.prototype.checkAnswer = function(ans) {
+  if ( ans === this.correct){
+    console.log('Answer correct');
+  } else {
+    console.log('Wrong answer');
+  }
+}
+
 var q1 = new Question('Is JavaScript the coolest programming language in the world?', ['Yes', 'No'], 0);
 
 var q2 = new Question('What\'s the name of this courese\'s teacher?', ['John', 'Michael', 'Jonas'], 2);
@@ -30,3 +40,5 @@ questions[n].displayQuestion();
 
 // Add promt
 var answer = parseInt(prompt('Please select the correct answer.'));
+
+questions[n].checkAnswer(answer);
